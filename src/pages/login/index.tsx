@@ -36,7 +36,7 @@ const Login = () => {
     sessionStorage.setItem("userData", JSON.stringify(userData));
 
     // Redirect to the home page
-    window.location.href = "codeleapPage/posts";
+    window.location.href = "/codeleapPage/posts";
   };
 
   return (
