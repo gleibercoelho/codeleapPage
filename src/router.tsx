@@ -9,7 +9,7 @@ export default function Router () {
         <BrowserRouter>
         <Routes>
             <Route path="/codeleapPage/posts" element={<Posts/>}/>
-            <Route path="/codeleapPage" element={<Login/>}/>
+            <Route path="/codeleapPage/" element={<Login/>}/>
         </Routes>
         </BrowserRouter>
     )
