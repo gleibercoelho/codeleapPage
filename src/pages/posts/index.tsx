@@ -331,8 +331,8 @@ const Posts = () => {
               )}</div>
 
             <div>
-              <p>@{post.username} </p>
-              <p>{formatDateTime(post.created_datetime)}</p>
+              <p className="author">@{post.username} </p>
+              <p className='time'>{formatDateTime(post.created_datetime)}</p>
             </div>
 
             <p>{post.content}</p>

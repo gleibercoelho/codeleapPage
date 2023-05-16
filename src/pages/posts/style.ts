@@ -35,7 +35,7 @@ export const PostsDiv = styled.div`
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         flex-wrap: wrap;
-        word-wrap: break-word
+        word-wrap: break-word;
     
     }
 
@@ -43,7 +43,7 @@ export const PostsDiv = styled.div`
         padding-bottom: 1.875rem;
         padding-right: 1.875rem;
         text-align: justify;    
-        word-wrap: break-word   
+          
         
         
     }
@@ -54,9 +54,19 @@ export const PostsDiv = styled.div`
         justify-content: space-between;
         margin-right: 1.875rem;
 
-        p{
+        p.author{
         padding-bottom: .9375rem;
-            
+        overflow: hidden;            
+        word-wrap: break-word; 
+        }
+
+        p.time{
+            display: flex;
+            flex-wrap: nowrap;           
+            word-wrap: normal;
+            font-size: .9375rem;
+            min-width: 12%;
+            height: 0;
         }
     }
 
@@ -84,8 +94,7 @@ div.newPost{
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        color: black;
-        
+        color: black;        
         background: linear-gradient(45deg, #8481FA, #38C9C8);
         background-image: linear-gradient(45deg, rgb(132, 129, 250), rgb(56, 201, 200));
 

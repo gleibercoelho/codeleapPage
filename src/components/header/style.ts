@@ -45,7 +45,8 @@ export const HeaderDiv = styled.div`
     @media only screen and (max-width: 48rem) {
             
     h2{
-        font-size: 1.125rem;
+        font-size: .75rem;
+        align-self: center;
 }
 }
 
