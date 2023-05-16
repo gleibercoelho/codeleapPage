@@ -4,7 +4,8 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import logo from "../../assets/images/logo.png";
 import { setUserData } from "../../Actions/user/index";
-import {LoginDiv} from "./style"
+import { LoginDiv } from "./style";
+
 
 const Login = () => {
   const dispatch = useDispatch();
