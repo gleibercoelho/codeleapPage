@@ -36,7 +36,9 @@ form{
         
        &:focus {
       outline: .125rem solid rgb(65,193,206);
-      outline: .125rem solid linear-gradient(225deg, rgba(65,193,206,1) 0%, rgba(122,138,244,1) 50%);
+      outline: .125rem solid linear-gradient(45deg, rgb(132, 129, 250), rgb(56, 201, 200));
+     ;
+      
 }
 
    
@@ -50,8 +52,8 @@ form{
       margin: .625rem;
       padding: .3125rem;
       justify-content: center;
-      background: rgb(65,193,206);
-      background: linear-gradient(225deg, rgba(65,193,206,1) 0%, rgba(122,138,244,1) 100%);
+      background: linear-gradient(45deg, #8481FA, #38C9C8);
+      background-image: linear-gradient(45deg, rgb(132, 129, 250), rgb(56, 201, 200));
       border: none;
       border-radius: .3125rem;
       width: 6.25rem;
@@ -65,6 +67,18 @@ form{
 }
     
 }
-
 }
+@media only screen and (max-width: 48rem) {
+            
+            form{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end
+            }
+
+            button{
+                  align-self: center;
+            }
+    
+    }
 `;

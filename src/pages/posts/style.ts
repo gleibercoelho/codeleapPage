@@ -14,21 +14,21 @@ export const PostsDiv = styled.div`
 
     ul{
         list-style: none;
-        margin: 20px;
+        margin: 1.25rem;
     
     
 
     li{
         background-color: rgba(249,249,249, 0.05);
-        padding-left: 30px;
-        margin: 20px 0; 
+        padding-left: 1.875rem;
+        margin: 1.25rem 0; 
         
     }
 
     span{
         width: 90%;
         color: #7695EC;
-        font-size: 40px;
+        font-size: 2.5rem;
         background: linear-gradient(45deg, #8481FA, #38C9C8);
         background-image: linear-gradient(45deg, rgb(132, 129, 250), rgb(56, 201, 200));
         background-clip: text;
@@ -40,8 +40,8 @@ export const PostsDiv = styled.div`
     }
 
     p{
-        padding-bottom: 30px;
-        padding-right: 30px;
+        padding-bottom: 1.875rem;
+        padding-right: 1.875rem;
         text-align: justify;    
         word-wrap: break-word   
         
@@ -52,22 +52,30 @@ export const PostsDiv = styled.div`
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin-right: 30px;
+        margin-right: 1.875rem;
 
         p{
-        padding-bottom: 15px;
+        padding-bottom: .9375rem;
             
         }
     }
 
     div.actions button{
-        margin: 10px;
+        margin: .625rem;
         padding: 0;
         background-color: none;
         background: none;
         border: none;
         cursor: pointer;
     }
+
+    @media only screen and (max-width: 48rem) {
+            
+            span{
+                font-size: 1.875rem;
+                width: 85%;
+            }
+            }
  
 }
 
@@ -88,13 +96,13 @@ div.newPost{
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 10px;
-        padding: 5px;
+        margin: .625rem;
+        padding: .3125rem;
         justify-content: center;       
         border: none;
-        border-radius: 5px;
-        width: 100px;
-        height: 20px;
+        border-radius: .3125rem;
+        width: 6.25rem;
+        height: 1.25rem;
         float: inline-start;
         background-color: #040404;
         
@@ -104,6 +112,7 @@ div.newPost{
     }
 
         }
+        
 
     
 }
@@ -120,15 +129,15 @@ div.pagination{
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 10px;
-        padding: 5px;
+        margin: .625rem;
+        padding: .3125rem;
         justify-content: center;
         background: linear-gradient(45deg, #8481FA, #38C9C8);
         background-image: linear-gradient(45deg, rgb(132, 129, 250), rgb(56, 201, 200));
         border: none;
-        border-radius: 5px;
-        width: 50px;
-        height: 20px;
+        border-radius: .3125rem;
+        width: 3.125rem;
+        height: 1.25rem;
         float: inline-start;
         cursor: pointer;
 
@@ -142,11 +151,15 @@ div.pagination{
      
     }
 
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 48rem) {
             
             button{
-                margin: 5px;
+                margin: .3125rem;
                 
+        }
+        span{
+            font-size: 1.875rem;
+            width: 75%;
         }
         }
 }
