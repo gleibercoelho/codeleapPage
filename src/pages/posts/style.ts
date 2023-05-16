@@ -14,21 +14,21 @@ export const PostsDiv = styled.div`
 
     ul{
         list-style: none;
-        margin: 1.25rem;
+        margin: 20px;
     
     
 
     li{
         background-color: rgba(249,249,249, 0.05);
-        padding-left: 1.875rem;
-        margin: 1.25rem 0; 
+        padding-left: 30px;
+        margin: 20px 0; 
         
     }
 
     span{
         width: 90%;
         color: #7695EC;
-        font-size: 2.5rem;
+        font-size: 40px;
         background: linear-gradient(45deg, #8481FA, #38C9C8);
         background-image: linear-gradient(45deg, rgb(132, 129, 250), rgb(56, 201, 200));
         background-clip: text;
@@ -40,8 +40,8 @@ export const PostsDiv = styled.div`
     }
 
     p{
-        padding-bottom: 1.875rem;
-        padding-right: 1.875rem;
+        padding-bottom: 30px;
+        padding-right: 30px;
         text-align: justify;    
         word-wrap: break-word   
         
@@ -52,16 +52,16 @@ export const PostsDiv = styled.div`
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin-right: 1.875rem;
+        margin-right: 30px;
 
         p{
-        padding-bottom: .9375rem;
+        padding-bottom: 15px;
             
         }
     }
 
     div.actions button{
-        margin: .625rem;
+        margin: 10px;
         padding: 0;
         background-color: none;
         background: none;
@@ -88,13 +88,13 @@ div.newPost{
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: .625rem;
-        padding: .3125rem;
+        margin: 10px;
+        padding: 5px;
         justify-content: center;       
         border: none;
-        border-radius: .3125rem;
-        width: 6.25rem;
-        height: 1.25rem;
+        border-radius: 5px;
+        width: 100px;
+        height: 20px;
         float: inline-start;
         background-color: #040404;
         
@@ -120,15 +120,15 @@ div.pagination{
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: .625rem;
-        padding: .3125rem;
+        margin: 10px;
+        padding: 5px;
         justify-content: center;
-        background: rgb(65,193,206);
-        background: linear-gradient(225deg, rgba(65,193,206,1) 0%, rgba(122,138,244,1) 100%);
+        background: linear-gradient(45deg, #8481FA, #38C9C8);
+        background-image: linear-gradient(45deg, rgb(132, 129, 250), rgb(56, 201, 200));
         border: none;
-        border-radius: .3125rem;
-        width: 3.125rem;
-        height: 1.25rem;
+        border-radius: 5px;
+        width: 50px;
+        height: 20px;
         float: inline-start;
         cursor: pointer;
 
@@ -138,8 +138,17 @@ div.pagination{
         color: white;
         cursor: default;
       }
-    
+
+     
     }
+
+    @media only screen and (max-width: 768px) {
+            
+            button{
+                margin: 5px;
+                
+        }
+        }
 }
 
 `;
