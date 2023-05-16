@@ -3,6 +3,7 @@ import { useDispatch } from "react-redux";
 import { clearUserData } from "../../Actions/user/index";
 import { HeaderDiv } from "./style";
 import logo from '../../assets/images/logo.png'
+import { useNavigate } from "react-router";
 
 
 
@@ -11,6 +12,7 @@ import logo from '../../assets/images/logo.png'
 export function Header() {
 
     const userloged = useSelector((state: any) => state.user.username);
+    const navigate = useNavigate();
 
 
     const dispatch = useDispatch();
@@ -18,7 +20,7 @@ export function Header() {
     const handleLogout = () => {
         dispatch(clearUserData()); // <-- clear user data from Redux store
         sessionStorage.removeItem("userData"); // <-- clear session storage
-        window.location.href = "/"; // <-- redirect to login page
+        navigate("/codeleapPage") // <-- redirect to login page
     };
 
 

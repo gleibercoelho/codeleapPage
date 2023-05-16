@@ -5,6 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 import logo from "../../assets/images/logo.png";
 import { setUserData } from "../../Actions/user/index";
 import { LoginDiv } from "./style";
+import { useNavigate } from "react-router";
 
 
 const Login = () => {
@@ -12,6 +13,7 @@ const Login = () => {
   const [username, setUsernameValue] = useState("");
   const [password, setPassword] = useState("");
   const isButtonDisabled = username.length < 3 || password.length < 3;
+  const navigate = useNavigate();
 
   // Load user data from session storage into Redux store on page refresh
   useEffect(() => {
@@ -36,7 +38,7 @@ const Login = () => {
     sessionStorage.setItem("userData", JSON.stringify(userData));
 
     // Redirect to the home page
-    window.location.href = "/codeleapPage/posts";
+    navigate("/codeleapPage/posts");
   };
 
   return (
