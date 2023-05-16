@@ -8,8 +8,8 @@ export default function Router () {
     return (
         <BrowserRouter>
         <Routes>
-            <Route path="/posts" element={<Posts/>}/>
-            <Route path="/" element={<Login/>}/>
+            <Route path="/codeleapPage/posts" element={<Posts/>}/>
+            <Route path="/codeleapPage" element={<Login/>}/>
         </Routes>
         </BrowserRouter>
     )
